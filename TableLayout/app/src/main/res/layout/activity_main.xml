@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"></LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Day/Period"
+                style="@style/table_head"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Morning"
+                style="@style/table_head"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Afternoon"
+                style="@style/table_head"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Evening"
+                style="@style/table_head"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Monday"
+                style="@style/table_head"/>
+
+            <TextView
+                android:id="@+id/textViewMM"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="--------"
+                style="@style/table_data"
+                android:layout_span="2"/>
+
+            <TextView
+                android:id="@+id/textViewMA"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="---------"
+                style="@style/table_data"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tuesday"
+                style="@style/table_head"/>
+
+            <TextView
+                android:id="@+id/textViewTM"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="---------"
+                style="@style/table_data"/>
+
+            <TextView
+                android:id="@+id/textViewTA"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="---------"
+                style="@style/table_data"/>
+
+            <TextView
+                android:id="@+id/textViewTE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="---------"
+                style="@style/table_data"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"></LinearLayout>
+</LinearLayout>

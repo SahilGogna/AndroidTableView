@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/textViewDescription"
+        app:layout_constraintTop_toTopOf="@+id/textViewDescription"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDescription"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:layout_constraintLeft_toRightOf="@id/editTextDescription"
+        app:layout_constraintTop_toTopOf="@+id/textViewDescription"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDescription"
+        android:onClick="returnResult"/>
+
+
+</android.support.constraint.ConstraintLayout>
